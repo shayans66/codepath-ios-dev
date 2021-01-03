@@ -1,12 +1,12 @@
-## NAME_OF_YOUR_APP_HERE
+## ethan shayan's hello world app
 
 ### App Description
-`TODO://` Add app description
+simple hello world app with functionality to change text view stirng with input, change colors of background and text color, and reset everything to normal by tapping the background
 
 ### App Walk-though
 `TODO://` Add the URL to your animated app walk-though `gif` in the image tag below. Make sure the gif actually renders and animates when viewing this README. (☝️ Remove this paragraph after after adding gif)
 
-<img src="YOUR_GIF_URL_HERE" width=200><br>
+<img src="https://ezgif.com/video-to-gif/ezgif-6-dc8d2ef180de.mov" width=200><br>
 
 `TODO://` In the User stories section below, add an `x` between the `-[ ]` like this `- [x]` for any user story you complete. (☝️ Remove this paragraph after after checking off user stories)
 
