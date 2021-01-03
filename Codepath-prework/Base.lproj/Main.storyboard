@@ -32,32 +32,74 @@
                                 <color key="highlightedColor" systemColor="opaqueSeparatorColor"/>
                             </label>
                             <button opaque="NO" contentMode="center" semanticContentAttribute="spatial" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LhT-wf-Ozk">
-                                <rect key="frame" x="55" y="479" width="299" height="116"/>
+                                <rect key="frame" x="58" y="481" width="299" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Change VIEW color!"/>
+                                <connections>
+                                    <action selector="didTapViewButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Vy-bH-gCo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="center" semanticContentAttribute="spatial" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gac-gn-oLt">
+                                <rect key="frame" x="55" y="391" width="299" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Click to change above text color!"/>
                                 <connections>
-                                    <action selector="didTapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Ii-jU-Wpv"/>
+                                    <action selector="didTapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eXJ-gl-d8V"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="center" semanticContentAttribute="spatial" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfB-vw-ba7">
+                                <rect key="frame" x="55" y="566" width="299" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Change text content!"/>
+                                <connections>
+                                    <action selector="didTapTextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Nb-0f-cb9"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zCf-aU-45U">
+                                <rect key="frame" x="85" y="94" width="245" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY" colorLabel="IBBuiltInLabel-Red"/>
                         <color key="backgroundColor" red="0.91146856618360639" green="1" blue="0.91931020487984927" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="mcy-3C-ynS" appends="YES" id="X3t-ts-m3Q"/>
+                        </connections>
                     </view>
                     <connections>
+                        <outlet property="textField" destination="zCf-aU-45U" id="6Q8-gf-dCu"/>
                         <outlet property="textLabel" destination="VLx-Y5-KRk" id="Nxq-cF-khe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="mcy-3C-ynS">
+                    <connections>
+                        <action selector="onResetGesture:" destination="BYZ-38-t0r" id="D6a-MB-cpM"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="82.366071428571431"/>
+            <point key="canvasLocation" x="18.840579710144929" y="82.33695652173914"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray3Color">
             <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
