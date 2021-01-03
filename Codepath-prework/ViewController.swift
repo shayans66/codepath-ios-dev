@@ -41,6 +41,8 @@ class ViewController: UIViewController {
         
         // textLabel.text = "peace out!"
         textLabel.text = textField.text
+        textField.text = ""
+        view.endEditing(true)
     }
     
     @IBAction func onResetGesture(_ sender: Any) {
